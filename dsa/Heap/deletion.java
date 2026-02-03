@@ -1,7 +1,7 @@
-
+package Heap;
 import java.util.*;
 
-public class Main{
+public class deletion{
     public static void main(String[] args) {
 
         ArrayList<Integer> heap = new ArrayList<>();
