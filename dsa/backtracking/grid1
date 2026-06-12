@@ -1,0 +1,20 @@
+import java.util.*;
+class a
+    {
+       public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int m=sc.nextInt();
+        int[][] arr=new int[n][m];        
+       int totalPath= countPath(n,m);
+        System.out.println(totalPath);
+       }
+       static int countPath(int r,int c)
+       {
+       if(r==1||c==1)
+        return 1;
+    int down=countPath(r-1,c);
+    int right=countPath(r,c-1);
+    return down+right;
+    }
+    }
